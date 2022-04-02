@@ -67,7 +67,7 @@ namespace CeVIOAIProxy
         public Version AppVersion => Assembly.GetExecutingAssembly().GetName().Version;
 
         [JsonIgnore]
-        public string AppVersionString => $"v{this.AppVersion}";
+        public string AppVersionString => $"v{this.AppVersion}(Modified by totoki-kei)";
 
         private bool isStartupWithWindows;
 
