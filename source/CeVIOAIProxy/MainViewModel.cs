@@ -73,6 +73,13 @@ namespace CeVIOAIProxy
                 }
             };
 
+            if (IpcRemotingServerController.Current != null)
+            {
+                this.IPCServerStatus = IpcRemotingServerController.Current.IsAvailable ?
+                    "IPC server is running." :
+                    "IPC server is stopped.";
+            }
+
             if (this.Config.IsEnabledTextPolling)
             {
                 CommentTextFileSubscriber.Current?.Start();
