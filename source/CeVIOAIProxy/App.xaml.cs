@@ -165,7 +165,7 @@ namespace CeVIOAIProxy
 
             AutoUpdater.ShowSkipButton = false;
             AutoUpdater.Start(
-                "https://raw.githubusercontent.com/anoyetta/CeVIOAIProxy/main/ReleaseNote.xml",
+                "https://raw.githubusercontent.com/totoki-kei/CeVIOAIProxy/main/ReleaseNote.xml",
                 Assembly.GetExecutingAssembly());
         }
     }
