@@ -1,3 +1,10 @@
+# *重要: このブランチについて*
+このブランチは、[anoyetta様のCeVIOAIProxy](https://github.com/anoyetta/CeVIOAIProxy)のIPC機能を再有効化したバージョンです。
+
+([NiconamaCommentViewer](https://www.posite-c.com/application/ncv/) からの連携を目的とした修正です)
+
+----
+
 # CeVIOAIProxy
 CeVIO AI に棒読みちゃんと同等のTCPソケットインターフェースを生やすアプリケーションです。CastCraft などの棒読みちゃんを呼び出して読上げさせるソフトウェアから CeVIO AI を呼び出せるようになります。
 
@@ -12,7 +19,9 @@ CastCraft → CeVIOAIProxy → CeVIO AI
 **要するに CastCraft などで CeVIO AI（小春六花など）が使えるようになります。**
 
 # ダウンロード
-*[こちら](https://github.com/anoyetta/CeVIOAIProxy/releases)* からダウンロードしてください。
+*[こちら](https://github.com/totoki-kei/CeVIOAIProxy/releases)* からダウンロードしてください。
+
+> anoetta様のオリジナルバージョンは*[こちら](https://github.com/anoyetta/CeVIOAIProxy/releases)* です。
 
 # 使い方
 1. CeVIOAIProxy.exe を起動する  
@@ -49,3 +58,8 @@ CeVIOAIProxy は棒読みちゃんの代わりとなります。したがって�
 ![image](https://user-images.githubusercontent.com/8295826/141483576-1e4bb77e-6a89-4cb2-b2f2-71b15a724a93.png)
 
 これで Twitch にコメントが投稿されると Tubeyomi -> CeVIOAIProxy -> CeVIO AI と連携されてコメントが読み上げられます。
+
+## NiconamaCommentViewer との連携方法
+1. 設定で「IPCサーバーで待受する」を有効にします。(IPCチャネル名は「BouyomiChan」のままにします)
+2. オプションの「読み上げ」タブの「棒読みちゃんの場所」に、棒読みちゃんの実行可能ファイルの代わりにこの実行ファイルを設定します。
+
